@@ -1,0 +1,364 @@
+@font-face
+{
+    font-family: Oswald-VariableFont_wght;  
+    src: url("polices/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face
+{
+    font-family: "Tahu!";
+    src: url(polices/Tahu!.ttf) format("truetype");
+}
+
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: Oswald-VariableFont_wght;
+    width: 100%;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 250px;
+    background-image: url("img_rbrpro/banniere.png");
+    background-position: bottom 380px  left 0;
+}
+
+#logo
+{
+    margin: 10px;
+}
+
+#signature h3
+{
+    font-family: "Tahu!";
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#menu1
+{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin-top: 50px;
+}
+
+#menu1 li
+{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+#menu1 a
+{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+#menu1_active
+{
+    background-color: white;
+}
+
+#menu1 a:hover
+{
+    background-color: white;
+    transition: all 1s;
+}
+
+#contenu
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: no-wrap;
+    background-color: black;
+}
+
+#menu2
+{
+    display: block;
+    background-color: black;
+    margin: 0;
+    padding: 30px;
+}
+
+#menu2 li
+{
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#menu2 a
+{
+    display: block;
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    font-size: 20px;
+    border-radius: 10%;
+    padding: 4px;
+}
+
+#menu2_active a
+{
+    border: solid 1px red;
+    border-radius: 10%;
+    padding: 3px;
+}
+
+#menu2 a:active
+{
+    background-color: red;
+    padding: 3px;
+}
+
+#menu2 a:hover
+{
+    border: solid 1px red;
+    border-radius: 10%;
+    padding: 3px;
+}
+
+section
+{
+    display: block;
+    background-color: rgb(100, 100, 100);
+    line-height: 1.8em;
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 100%;
+}
+
+section h1
+{
+    color: rgb(150, 0, 0);
+    font-size: 2em;
+}
+
+section h2
+{
+    font-size: 2em;
+}
+
+section p, section li, section figcaption
+{
+    color: rgb(220, 220, 220);
+    font-size: 18px;
+    text-shadow: 0.5px 0.5px 0.2px rgb(70, 70, 70);
+}
+
+section strong
+{
+    font-weight: normal;
+    color: rgb(270, 270, 270);
+    text-shadow: 2px 2px 1px rgb(50, 50, 50);
+}
+
+section em
+{
+    color: rgb(270, 270, 270);
+}
+
+section img
+{
+    margin-top: 20px;
+}
+
+section a
+{
+    text-decoration: none;
+    color: rgb(150, 0, 0);
+}
+
+section a:visited, section a:hover
+{
+    color: black;
+}
+
+.onglets
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 40px;
+    width: 660px;
+}
+
+.onglets li
+{
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.onglets a
+{
+    display: block;
+    color: rgb(120, 120, 120);
+    text-shadow: none;
+    font-size: 20px;
+    padding: 0 5px;
+    margin: 35px;
+}
+
+.onglets a:hover
+{
+    border: solid 1px red;
+    border-radius: 10%;
+    margin: 34px;
+}
+
+.onglets a:visited
+{
+    color: rgb(120, 120, 120);
+}
+
+.onglets a:active
+{
+    background-color: red;
+}
+
+.tab_active a
+{
+    border: solid 1px red;
+    border-radius: 10%;
+    margin: 34px;
+}
+
+#forum
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 90%;
+    height: 90%;
+    min-height: 1600px;
+    border: 0;
+}
+
+@media screen and (max-width: 1200px)
+{
+    header
+    {
+        height: 100%;
+    }
+
+    #titre
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #menu1
+    {
+        display: block;
+        margin-top: 0;
+        margin-left: -20px;        
+    }
+
+    #menu1 li
+    {
+        margin-bottom: 10px;
+    }
+
+    #menu1 a
+    {
+        padding: 0 5px;
+    }
+
+    #contenu
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #menu2
+    {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        padding: 0;
+    }
+
+    #menu2 li
+    {
+        margin: 5px;
+    }
+
+    #menu2 a
+    {
+        font-size: 16px;
+    }
+
+    section
+    {
+        min-height: 810px;
+        padding: 0;
+        margin: 0;
+    }  
+
+    section p, section li, section figcaption
+    {
+        font-size: 14px;
+        margin: 10px 10px;
+        text-shadow: none;
+    }
+
+    section h1, section h2
+    {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    section img
+    {
+        max-width: 100%;   
+    }
+
+    .onglets
+    {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .onglets li
+    {
+        width: 116px;
+        margin: auto;
+        padding: 5px;
+    }
+
+    .onglets a
+    {
+        width: 100%;
+        padding: 1px;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .onglets a:active, .onglets a:hover
+    {
+        padding: 0;
+        margin: 0;
+    }
+}

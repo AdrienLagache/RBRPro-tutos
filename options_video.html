@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+	<head>
+  		<meta charset="utf-8">
+  		<title>VIDEO</title>
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  		<link rel="stylesheet" href="normalize.css">
+  		<link rel="stylesheet" href="style_rbrpro_tuto.css">
+	</head>
+
+	<body>        <!-- Vérifié, corrigé -->
+
+		<header>
+			<div id="titre">
+				<div id="logo">
+					<img src="img_rbrpro/logo_pro3.png" alt="Le logo de RBRPro"/>						
+				</div>
+
+				<div id="signature">
+					<h3>By VBR#Gachette</h3>
+				</div>
+			</div>
+
+			<nav>
+				<ul id="menu1">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="inscription.html">Inscription/Donation</a></li>
+					<li><a href="install.html">Installation</a></li>
+					<li><a href="navigator.html">Navigator</a></li>
+					<li><a href="forum.html">Forum</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="contenu">
+			<nav>
+				<ul id="menu2">
+					<li><img src="img_rbrpro/bouton_rbrpro.png" alt="Le symbole rbrpro du manager"/><br/><a href="rbrpro.html">RBRPRO</a></li>
+					<li><img src="img_rbrpro/bouton_profil.png" alt="Le symbole profil du manager"/><br/><a href="profil.html">PROFIL</a></li>
+					<li><img src="img_rbrpro/bouton_en_ligne.png" alt="Le symbole en ligne du manager"/><br/><a href="en_ligne.html">EN LIGNE</a></li>
+					<li id="menu2_active"><img src="img_rbrpro/bouton_options.png" alt="Le symbole options du manager"/><br/><a href="options.html">OPTIONS</a></li>
+					<li><img src="img_rbrpro/bouton_contenu.png" alt="Le symbole contenu du manager "/><br/><a href="contenu.html">CONTENU</a></li>
+					<li><img src="img_rbrpro/bouton_repetitions.png" alt="Le symbole répétitions du manager"/><br/><a href="repetitions.html">REPETITIONS</a></li>
+					<li><img src="img_rbrpro/bouton_addon.png" alt="Le symbole add-ons du manager"/><br/><a href="add_on.html">ADD-ONS</a></li>
+					<li><img src="img_rbrpro/bouton_credits.png" alt="Le symbole crédits du manager"/><br/><a href="credits.html">CREDITS</a></li>
+				</ul>		
+			</nav>
+
+			<section>
+			
+				<ul class="onglets">
+					<li class="tab_active"><a href="options_video.html">Vidéo</a></li>
+					<li><a href="options_vue.html">Vue</a></li>
+					<li><a href="options_audio.html">Audio</a></li>
+					<li><a href="options_controles.html">Contrôles</a></li>
+					<li><a href="options_manager.html">Manager</a></li>
+					<li><a href="options_modules.html">Modules d'extension</a></li>
+				</ul>
+
+				<h2>Vidéo</h2>
+
+				<ul>
+					<li><a href="#resolution_ecran">Résolution d'écran</a></li>
+					<li><a href="#options_graphiques">Options graphiques</a></li>
+					<li><a href="#couleur_utilitaire">Couleur et Utilitaire</a></li>
+					<li><a href="#casque_vr">Casque VR</a></li>
+					<li><a href="#tableau_de_bord">Tableaux de bord à l'écran</a></li>
+				</ul>
+
+				<h1 id="resolution_ecran">Résolution d'écran</h1>
+
+				<p>Dans un premier temps, vous avez les réglages de la résolution. Comme vous pouvez le voir sur ma capture d'écran, je joue en 1024x768. Je vous rassure, c'est parce que je joue en VR ça ne changera pas la résolution dans le casque, seulement le retour écran. Je vous conseil de faire la même chose si vous jouez en VR.<br/>
+				Si vous utilisez Reshade5 + DxWrapper (voir plus bas) vous pouvez mettre en plein écran, les problèmes de freeze lors d'un retour au bureau ont été corrigés.</p>
+
+				<p>Enfin, La synchronisation verticale (Vsync) peut créer des problèmes notamment par rapport au bruit des pneus. Pour éviter cela il est conseiller de la laisser désactivée et de l'activer dans le panneau de configuration de votre carte graphique, si vous en avez besoin.</p>
+				<p>Sur le manager on vous conseille de limiter les FPS à 144 au maximum mais ce bug a été corrigé cette année.</p>
+
+				<figure>
+					<a href="img_rbrpro/video1.png" target="_blank" title="Cliquez pour agrandir !"><img src="img_rbrpro/video1_mini.png" alt="Une capture d'écran de l'onglet vidéo du manager"/></a>
+				</figure>
+
+				<h1 id="options_graphiques">Options graphiques</h1>
+
+				<p>Plus bas, vous trouverez les Options graphiques.</p>
+				<p>Cette partie est très importante. En effet, malgrès le fait que le jeu original date de 2004, les mods associés peuvent tout de même consommer énormement de ressources.</p>
+
+				<ul>
+					<li><strong>Pilote</strong> : vous pouvez choisir quel pilote graphique utiliser.</li>
+
+					<ul>
+						<li><em>original</em> : cet option correspond aux réglages de base du jeu. Avec cette option vous ne pourrez pas activer les améliorations.</li>
+						<li><em>DX Wrapper et reshade 5</em> : Reshade est un outil permettant d'exploiter une collection de shaders. C'est ce qui vous permettra d'activer par exemple l'occlusion ambiante, ou encore le bloom, etc.<br/>
+						DX Wrapper, quant à lui, corrige les problèmes de compatibilité avec DirectX si vous utilisez une version récente de Windows.</li>
+						<li><em>Reshade 4</em> : Cette version antérieure à Reshade 5 a été laissée en cas de problèmes de performance mais elle vous permettra d'utiliser les mêmes options.</li>
+						<li><em>Vulkan</em> : vous pouvez utiliser Vulkan si vous avez des problèmes de performance. Avec certaines configuration (notamment les moins puissantes), Vulkan offre un gain de FPS. Cependant il s'agit d'un support expérimental dans RBRPro et vous ne pourrez pas activer les shaders.</li>
+					</ul>
+
+					<li><strong>Cartes d'environnement</strong> : cette option concerne les texture de la spéciale sur laquelle vous jouez. Attention, elle peut causer des chutes de FPS sur certaines spéciales.</li>
+					<li><strong>Ray Tracing</strong> : je suppose que vous avez déjà entendu parler de cette technologie. Elle permet d'améliorer la lumière, les reflets, les ombres en temps réel. Cette option consomme beaucoup de ressources et nécessite une carte graphique récente (RTX ou équivalent).</li>
+					<li><strong>L'occlusion ambiante</strong> est une option plus ancienne que le Ray tracing jouant également sur la lumière (assombrissement de certaines zones) afin d'améliorer le réalisme en faisant mieux appraître les reliefs. Cette option est beaucoup moins gourmande que le Ray tracing mais vous coutera tout de même quelques FPS.</li>
+					<li><strong>Bloom</strong> : le bloom sert a adoucir la transition entre le lumineux et le sombre en faisant déborder la lumière dans la zone obscure. Le HDR est une technologie d'affichage qui permet à l'image de couvrir de manière plus nuancée une différence bien plus importante entre le point le plus sombre et le plus lumineux d'une image tout en affichant une palette de couleurs plus riche.</li>
+					<li><strong>Rayons du soleil</strong> : appelé Godrays dans reshade, cette technologie simule tout simplement les effets des rayons du soleil. Le rendu reste cependant assez controversé et peu causer des chutes de FPS.</li>
+					<li><strong>Profondeur de champ</strong> : il s'agit de la distance entre les éléments les plus proches et les plus éloignés d'une scène, qui semble net. On peut facilement observer ce phénomène en photographie mais il doit être simulé dans le jeu vidéo puisque l'image par défaut est nette quelle que soit la direction et la distance du regard.</li>
+					<li><strong>Anti-alias</strong> : L'anti-aliasing ou anticrénelage sert à lisser le bord des formes obliques afin d'éviter l'effet d'escalier dû aux pixels. RBRPro utilise les technologies FXAA et MSAA. Les performance varient en fonction de votre carte graphique. Je vous conseille de tester vous même les différents niveaux.</li>
+					<li><strong>Qualité des particules</strong> : sert à régler la qualité des effets de poussière au passage de la voiture.</li>
+					<li><strong>Ombre de voiture</strong> : ajoute l'ombre de la voiture.</li>
+				</ul>
+
+				<figure>
+					<a href="img_rbrpro/video2.png" target="_blank" title="Cliquez pour agrandir !"><img src="img_rbrpro/video2_mini.png" alt="Une capture d'écran de l'onglet vidéo du manager"/></a>
+				</figure>
+					
+				<h1 id="couleur_utilitaire">Couleur et Utilitaire</h1>
+
+				<p>Ici pas de surprise, vous pouvez régler les couleurs en jeu et choisir si vous voulez que les menus du jeu soit transparents ou non.</p>
+
+				<p>Dans "Utilitaire" vous pouvez choisir d'afficher le compteur de FPS. Cette option est plutôt importante car les performances peuvent varier en fonction de la spéciale. Vous pouvez essayer sur "Verkiai" ou "Peyregrosse-Mandagout", vous verrez que vous n'aurez pas les mêmes performances que sur "Côte d'Arbroz", par exemple. En plus, ça marche en VR !<br/>
+				<p>Vous pouvez aussi choisir d'afficher l'horloge dans le jeu.</p>
+
+				<figure>
+					<a href="img_rbrpro/video3.png" target="_blank" title="Cliquez pour agrandir !"><img src="img_rbrpro/video3_mini.png" alt="Une capture d'écran de l'onglet vidéo du manager"/></a>
+				</figure>
+
+				<h1 id="casque_vr">Casque VR</h1>
+
+				<p>Lorsque vous sélectionnez cette option, un nouveau menu apparaît. Vous pouvez églement sélectionner la VR avec le bouton en bas du manager.</p>
+
+				<ul>
+					<li><strong>Exécuter dans une petite fenêtre</strong> : cette option lancera le jeu dans une fenêtre plus petite afin de garder un taux de rafraichissement plus stable.</li>
+					<li><strong>Anti-aliasing</strong> : plus vous mettrez une valeur élevée et plus le rendu sera net. Cette option consomme cependant beaucoup de ressources. Si votre PC est assez puissant et que vous souhaitez utiliser cette option, il est conseillé de l'utiliser entre 1.5 et 2.0.</li>
+					<li><strong>Echelle HUD, distance HUD et décalage du tableau de bord horizontal</strong> : l'échelle HUD règle la taille du tableau de bord, la distance HUD correspond à la distance à laquelle vous le verrez et le décalage, quant à lui, vous permettra de le décaler vers la gauche ou la droite.</li>
+					<li><strong>Rotation du volant en degrés</strong> : Attention, il ne s'agit que de la rotation visuelle du volant. Cela ne changera pas l'angle de braquage de votre volant en réel.</li>
+					<li><strong>Désactiver le secouement de la caméra</strong> : c'est assez clair, cela permet de désactiver les mouvements de caméra dûs aux reliefs de la piste.</li>
+					<li><stong>Afficher le bureau</strong> : vous pouvez afficher une capture d'écran de votre bureau lorsque vous serez dans les menus en VR.</li>
+					<li><strong>Mode copilote</strong> : cette option permet de désactiver le suivi du regard sur l'écran de votre pc. L'image de votre écran restera fixe et ne suivra plus les mouvemnet du casque. Cela peut-être utile afin de passer rapidemment de la VR à l'écran pour modifier vos notes mais permet aussi d'améliorer les performances dans certains cas. Essayez avec différentes résolutions.</li>
+					<li><strong>Forcer l'arrêt de steam VR avant de commencer</strong> : comme son nom l'indique vous forcerez l'arrêt de steam VR au lancement du jeu. Vous pourrez tout de même jouer en VR évidemment !</li>
+				</ul>
+
+				<figure>
+					<a href="img_rbrpro/video4.png" target="_blank" title="Cliquez pour agrandir !"><img src="img_rbrpro/video4_mini.png" alt="Une capture d'écran de l'onglet vidéo du manager"/></a>
+				</figure>
+
+				<h1 id="tableau_de_bord">Tableau de bord à l'écran</h1>
+
+				<p>Dans cette partie vous pourrez choisir quel style de tableau de bord vous voulez afficher. Vous pouvez également décider si vous voulez qu'il s'affiche ou pas dans le jeu et en replay.</p>
+
+				<p>Si vous voulez modifier la position du tableau de bord vous devez sélectionner "personnalisé" dans le menu déroulant puis, une fois en jeu, double-cliquez avec le bouton droit de la souris. Attention, vous devrez modifier "mini dash" ou "full dash" en fonction du tableau de bord choisit dans les options du jeu (tableau de bord réduit ou complet).<br/>
+				N'oubliez pas de sauvegarder.</p>
+					
+				<figure>
+					<img src="img_rbrpro/video5.png" alt="La fenêtre des options du tableau de bord dans le jeu"/>
+				</figure>
+			</section>
+		</div>
+	</body>
+</html>
